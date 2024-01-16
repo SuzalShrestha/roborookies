@@ -2,9 +2,17 @@
 #include <string>
 using namespace std;
 using std::string;
+void ifu(string intake){
+for(int x=0;x<intake.length();x++){
+    if(intake[x]=='U'){ 
+    return 1;
+        }
+    }
+    return 0;
+}
 void shortestPath(string input)
 {
-    while (input.length() > 3)
+    while (ifu(input)==1)
     {
         for (int i = 0; i < input.length(); i++)
         {
